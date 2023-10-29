@@ -1,0 +1,33 @@
+ERROR
+  $Errors = [
+        'firstNameError' => '',
+        'lastNameError' => '',
+        'emailError' => '',
+    ];
+
+vilade File>>>>>
+    
+    if (empty($firstName)) {
+
+        $Errors['firstNameError'] = 'The FirstName IS Empty';
+    }
+
+
+    if (empty($lastname)) {
+
+        $Errors['lastNameError'] = 'The LastName IS Empty';
+    }
+
+
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+        $Errors['emailError'] = 'Email is incorrect';
+    }
+
+
+.......................................................................
+
+
+
+
